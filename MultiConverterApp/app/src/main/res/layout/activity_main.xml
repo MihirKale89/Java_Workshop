@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/converter_app"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:fontFamily="@string/abc_action_bar_home_subtitle_description_format"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewHeading" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerOptions"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textViewOptionSelection"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/select_option"
+        android:id="@+id/textViewOptionSelection"
+        android:layout_below="@+id/textViewHeading"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp"
+        android:layout_alignRight="@+id/spinnerOptions"
+        android:layout_alignEnd="@+id/spinnerOptions" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutForLabels"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hllX1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:layout_weight="1"
+            android:text="X1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:layout_weight="1"
+            android:text="X2"
+            android:id="@+id/hllX2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1"
+
+            android:text="Y1"
+            android:id="@+id/hllY1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1"
+
+            android:text="Y2"
+            android:id="@+id/hllY2"/>
+
+
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarConverter"
+        android:layout_below="@+id/linearLayoutForLabels"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="90dp"
+        android:max="100"
+        android:layout_alignRight="@+id/linearLayoutForLabels"
+        android:layout_alignEnd="@+id/linearLayoutForLabels" />
+
+
+</RelativeLayout>
